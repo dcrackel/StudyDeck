@@ -52,17 +52,34 @@ function forwardTo(url) {
             new deck
         </div>
     </div>        
-    
-        
-    </div>
-</div> 
+    </div>        
+            
+</div>
+
 
       
     <decks>
+        <div class="deckstoolbar">
+            <input class="deckssearch" placeholder="enter text here to filter decks"/>
+            <div class="deskciconbox">
+<!--
+                <div class="showallcards">
+                    <i class="fas fa-globe"></i>
+                </div>
+-->
+                <div class="collapsedecks">
+                    <i class="fas fa-chevron-circle-up"></i>
+                </div>
+            </div>
+        </div>
+        <div class="deckarea">
         <deck>
             <div class="decktitlebox">
                 <div class="decktitle">
                 This is a deck title
+                </div>
+                <div class="editdeck">
+                <i class="fas fa-edit"></i>
                 </div>
                 <div class="deletedeck">
                 <i class="fas fa-trash"></i>
@@ -77,6 +94,9 @@ function forwardTo(url) {
             <div class="decktitlebox">
                 <div class="decktitle">
                 This is a deck title
+                </div>
+                <div class="editdeck">
+                <i class="fas fa-edit"></i>
                 </div>
                 <div class="deletedeck">
                 <i class="fas fa-trash"></i>
@@ -92,20 +112,8 @@ function forwardTo(url) {
                 <div class="decktitle">
                 This is a deck title
                 </div>
-                <div class="deletedeck">
-                <i class="fas fa-trash"></i>
-                </div>
-            </div>
-            <div class="deckdescription">
-                This is a deck decription.
-            </div>
-        </deck>
-        
-        
-                <deck>
-            <div class="decktitlebox">
-                <div class="decktitle">
-                This is a deck title
+                <div class="editdeck">
+                <i class="fas fa-edit"></i>
                 </div>
                 <div class="deletedeck">
                 <i class="fas fa-trash"></i>
@@ -122,12 +130,35 @@ function forwardTo(url) {
                 <div class="decktitle">
                 This is a deck title
                 </div>
+                <div class="editdeck">
+                <i class="fas fa-edit"></i>
+                </div>
                 <div class="deletedeck">
                 <i class="fas fa-trash"></i>
                 </div>
             </div>
             <div class="deckdescription">
                 This is a deck decription.
+            </div>
+        </deck>
+        
+        
+                <deck>
+            <div class="decktitlebox">
+                <div class="decktitle">
+                This is a deck title
+                </div>
+                <div class="editdeck">
+                <i class="fas fa-edit"></i>
+                </div>
+                <div class="deletedeck">
+                <i class="fas fa-trash"></i>
+                </div>
+            </div>
+            <div class="deckdescription">
+                This is a deck decription.
+                
+Jacob Ipp was forced into the Kovno Ghetto, established by the occupying forces of Nazi-Germany, with his family at age six. One day, when he and his mother were in line to be deported for execution they were the only two people to survive out of 5,000. After escaping the Ghetto with his parents in 1943 before it was turned into a concentration camp, they had to hide for 9 months in the countryside where they spent 6 months underground, hiding in a potato hole. Ipp endured bleak post-war conditions until the family immigrated via Munich to the United States when he was twelve.
             </div>
         </deck>
         
@@ -136,6 +167,9 @@ function forwardTo(url) {
                 <div class="decktitle">
                 This is a deck title
                 </div>
+                <div class="editdeck">
+                <i class="fas fa-edit"></i>
+                </div>
                 <div class="deletedeck">
                 <i class="fas fa-trash"></i>
                 </div>
@@ -146,16 +180,90 @@ function forwardTo(url) {
         </deck>
         
         
-    
+        </div>
     </decks>
     
     
 
     <editcardsarea>
-        <cardeditbox>
+        <div class="editcardsearchbox">
+            <input class="cardsfilter" placeholder="enter text here to filter cards"/>
+            <div class="deskciconbox">
+                <div class="showallcards">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="collapsedecks">
+                    <i class="fas fa-chevron-circle-up"></i>
+                </div>
+            </div>
+        </div>
+        
+        <cardeditbox draggable="true">
             <div class="editcardheader">
-                <div>1</div>
-                <div class="deletedeck">
+                <div class="cardnum">1</div>
+                
+                <div class=editcardsiconbox>
+                    <div class="deletedeck2">
+                    <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="editcardbars">
+                    <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="editcardbody">
+                
+                <div class="editquestion">
+                    <textarea class="editinput" placeholder="Enter Question..."></textarea>
+                </div>
+                
+               <div class="editanswer">
+              <textarea class="editinput" placeholder="Enter Answer..."></textarea>
+            </div>                   
+            </div>
+            
+         <div class="cardskeywordsbox">
+            <input class="cardskeywords" placeholder="Enter Keywords" />
+         </div>    
+
+        </cardeditbox>
+
+        <cardeditbox draggable="true">
+            <div class="editcardheader">
+                <div class="cardnum">2</div>
+                
+                <div class=editcardsiconbox>
+                    <div class="deletedeck2">
+                    <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="editcardbars">
+                    <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="editcardbody">
+                
+                <div class="editquestion">
+                    <textarea class="editinput" placeholder="Enter Question..."></textarea>
+                </div>
+                
+               <div class="editanswer">
+              <textarea class="editinput" placeholder="Enter Answer..."></textarea>
+            </div>                   
+            </div>
+            
+         <div class="cardskeywordsbox">
+            <input class="cardskeywords" placeholder="Enter Keywords" />
+         </div>    
+
+        </cardeditbox>
+        
+        <cardeditbox draggable="true">
+            <div class="editcardheader">
+                <div class="cardnum">3</div>
+                <div class="deletedeck2">
                 <i class="fas fa-trash"></i>
                 </div>
                 
@@ -168,63 +276,17 @@ function forwardTo(url) {
                 
                <div class="editanswer">
               <textarea class="editinput" placeholder="Enter Answer..."></textarea>
-                </div>               
-
-                
+            </div>                   
             </div>
+            
+         <div class="cardskeywordsbox">
+            <input class="cardskeywords" placeholder="Enter Keywords" />
+         </div>    
 
-        </cardeditbox>
-    </editcardsarea>
-
-        <editcardsarea>
-        <cardeditbox>
-            <div class="editcardheader">
-                <div>2</div>
-                <div class="deletedeck">
-                <i class="fas fa-trash"></i>
-                </div>
-                
-            </div>
-            <div class="editcardbody">
-                
-                <div class="editquestion">
-                    <textarea class="editinput" placeholder="Enter Question..."></textarea>
-                </div>
-                
-               <div class="editanswer">
-              <textarea class="editinput" placeholder="Enter Answer..."></textarea>
-                </div>               
-
-                
-            </div>
-
-        </cardeditbox>
-    </editcardsarea>
+        </cardeditbox>        
+        
+        
        
-    
-        <editcardsarea>
-        <cardeditbox>
-            <div class="editcardheader">
-                <div>3</div>
-                <div class="deletedeck">
-                <i class="fas fa-trash"></i>
-                </div>
-                
-            </div>
-            <div class="editcardbody">
-                
-                <div class="editquestion">
-                    <textarea class="editinput" placeholder="Enter Question..."></textarea>
-                </div>
-                
-               <div class="editanswer">
-              <textarea class="editinput" placeholder="Enter Answer..."></textarea>
-                </div>               
-
-                
-            </div>
-
-        </cardeditbox>
     </editcardsarea>
     
     
